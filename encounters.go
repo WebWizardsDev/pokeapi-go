@@ -3,7 +3,7 @@ package pokeapi
 import (
 	"fmt"
 
-	"github.com/mtslzr/pokeapi-go/structs"
+	"github.com/JacobPotter/pokeapi-go/structs"
 )
 
 // EncounterMethod returns a single encounter method (by name or ID).
@@ -20,7 +20,8 @@ func EncounterCondition(id string) (result structs.EncounterCondition,
 }
 
 // EncounterConditionValue returns a single encounter condition value
-//   (by name or ID).
+//
+//	(by name or ID).
 func EncounterConditionValue(id string) (result structs.EncounterConditionValue,
 	err error) {
 	err = do(fmt.Sprintf("encounter-condition-value/%s", id), &result)

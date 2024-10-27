@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mtslzr/pokeapi-go/structs"
+	"github.com/JacobPotter/pokeapi-go/structs"
 )
 
 // Resource returns resource list for an endpoint.

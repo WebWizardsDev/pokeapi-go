@@ -3,7 +3,7 @@ package pokeapi
 import (
 	"fmt"
 
-	"github.com/mtslzr/pokeapi-go/structs"
+	"github.com/JacobPotter/pokeapi-go/structs"
 )
 
 // Move returns a single move (by name or ID).
