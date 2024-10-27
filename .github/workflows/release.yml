@@ -53,4 +53,4 @@ jobs:
           prerelease: false
       - name: Publish
         if: ${{ steps.semantic.outputs.version_tag != steps.tag.outputs.tag }}
-        run: GOPROXY=proxy.golang.org go list -m github.com/JacobPotter/pokeapi-go@${{ steps.semantic.outputs.version_tag }}
+        run: GOPROXY=https://proxy.golang.org go list -m github.com/JacobPotter/pokeapi-go@${{ steps.semantic.outputs.version_tag }}
