@@ -480,6 +480,80 @@ type Stat struct {
 	} `json:"names"`
 }
 
+type Sprites struct {
+	GenerationIii struct {
+		Colosseum struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"colosseum"`
+		Emerald struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"emerald"`
+		FireredLeafgreen struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"firered-leafgreen"`
+		RubySaphire struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"ruby-saphire"`
+		Xd struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"xd"`
+	} `json:"generation-iii"`
+	GenerationIv struct {
+		DiamondPearl struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"diamond-pearl"`
+		HeartgoldSoulsilver struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"heartgold-soulsilver"`
+		Platinum struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"platinum"`
+	} `json:"generation-iv"`
+	GenerationIx struct {
+		ScarletViolet struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"scarlet-violet"`
+	} `json:"generation-ix"`
+	GenerationV struct {
+		Black2White2 struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"black-2-white-2"`
+		BlackWhite struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"black-white"`
+	} `json:"generation-v"`
+	GenerationVi struct {
+		OmegaRubyAlphaSapphire struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"omega-ruby-alpha-sapphire"`
+		XY struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"x-y"`
+	} `json:"generation-vi"`
+	GenerationVii struct {
+		LetsGoPikachuLetsGoEevee struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"lets-go-pikachu-lets-go-eevee"`
+		SunMoon struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"sun-moon"`
+		UltraSunUltraMoon struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"ultra-sun-ultra-moon"`
+	} `json:"generation-vii"`
+	GenerationViii struct {
+		BrilliantDiamondAndShiningPearl struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"brilliant-diamond-and-shining-pearl"`
+		LegendsArceus struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"legends-arceus"`
+		SwordShield struct {
+			NameIcon string `json:"name_icon"`
+		} `json:"sword-shield"`
+	} `json:"generation-viii"`
+}
+
 // Type is a single type.
 type Type struct {
 	DamageRelations struct {
@@ -502,6 +576,7 @@ type Type struct {
 			URL  string `json:"url"`
 		} `json:"no_damage_to"`
 	} `json:"damage_relations"`
+	Sprites     Sprites `json:"sprites"`
 	GameIndices []struct {
 		GameIndex  int `json:"game_index"`
 		Generation struct {
