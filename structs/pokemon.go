@@ -269,6 +269,10 @@ type Pokemon struct {
 		} `json:"type"`
 	} `json:"types"`
 	Weight int `json:"weight"`
+	Cries  struct {
+		Latest string `json:"latest"`
+		Legacy string `json:"legacy"`
+	} `json:"cries"`
 }
 
 // PokemonColor is a single Pokemon color.
