@@ -1,10 +1,5 @@
 # pokeapi-go
 
-![Actions](https://github.com/JacobPotter/pokeapi-go/workflows/Actions/badge.svg)
-![Release](https://img.shields.io/github/v/release/mtslzr/pokeapi-go)
-[![GoDoc](https://img.shields.io/badge/go-documentation-blue.svg?style=flat)](http://godoc.org/github.com/JacobPotter/pokeapi-go)
-[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](https://raw.githubusercontent.com/JacobPotter/pokeapi-go/master/LICENSE)
-
 Wrapper for [Poke API](https://pokeapi.co), written in Go. *Supports PokeAPI v2.*
 
 - [pokeapi-go](#pokeapi-go)
