@@ -2,7 +2,11 @@ package structs
 
 // Move is a single move.
 type Move struct {
-	Accuracy      int `json:"accuracy"`
+	Accuracy         int `json:"accuracy"`
+	LearnedByPokemon []struct {
+		Name string `json:"name"`
+		URL  string `json:"url"`
+	} `json:"learned_by_pokemon"`
 	ContestCombos struct {
 		Normal struct {
 			UseAfter  interface{} `json:"use_after"`
